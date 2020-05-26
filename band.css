@@ -1,0 +1,123 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+	font-family: "Lato", sans-serif;
+	margin: 0;
+}
+
+.mySlides {
+	display: none
+}
+
+.nav {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+}
+
+.nav-ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  background-color: #333;
+  overflow: hidden;
+  box-shadow: 0px 2px 5px #000;
+}
+.nav-ul li {
+  /* float: left will also work to get all lis in line with all <a> tags' display block
+        but with display block we cant give display inline to li it should be inline block because <a> inside li is having display block.
+    */
+  /* float: left; */
+  display: inline-block;
+}
+.nav-ul li a {
+  text-decoration: none;
+  color: white;
+  display: block;
+  text-align: center;
+  padding: 14px 16px;
+}
+
+.nav-ul li:hover {
+  background-color: #111;
+}
+.mobile-nav {
+  display: none;
+  position: fixed;
+  top: 47px;
+  left: 0;
+  width: 100%;
+}
+.mobile-nav-ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  background-color: #333;
+  overflow: hidden;
+}
+.mobile-navbar-ul li {
+	display: block;
+}
+.mobile-nav-ul li a {
+	text-decoration: none;
+  color: white;
+  display: block;
+  text-align: left;
+  padding: 14px 16px;
+}
+.center {
+	text-align: center;
+}
+.my-container {
+	display: block;
+	position: relative;
+}
+.bottomMiddle-slide {
+	position: absolute;
+	bottom: 9%;
+	left: 45%;
+}
+.white {
+	color: #fff;
+}
+.col-3 {
+	float: left;
+	width: 33.33%;
+}
+.row:after {
+	content: '';
+	clear: both;
+	display: table;
+}
+.wide-4 {
+	letter-spacing: 4px;
+}
+.content {
+	margin-left: auto;
+	margin-right: auto;
+}
+.opacity-light {
+	opacity: 0.7;
+}
+.border-round {
+	border-radius: 5px;
+}
+.padding-64 {
+	padding: 64px 0px 64px 0px;
+}
+.padding-32 {
+	padding: 32px 0px 32px 0px;
+}
+
+@media screen and (max-width: 600px) {
+  .hide-small {
+    display: none !important;
+    transition: width 2s linear 1s;
+	}
+	.mobile-nav {
+		display: block;
+	}
+}

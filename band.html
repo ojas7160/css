@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>The Band</title>
+    <meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+		<link rel="stylesheet" href="./band.css">
+		<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  </head>
+  <body>
+		<!-- NavBar -->
+		<div class="nav">
+			<ul class="nav-ul">
+				<li class="center-text-for-mobile"><a href="#home">HOME</a></li>
+				<li class="hide-small"><a href="#band">BAND</a></li>
+				<li class="hide-small"><a href="#tour">TOUR</a></li>
+				<li class="hide-small"><a href="contact">CONTACT</a></li>
+				<li class="hide-small"><a href="javascript: void(0)">MORE</a></li>
+			</ul>
+		</div>
+		<!-- navbar for mobile -->
+		<div class="mobile-nav">
+			<ul class="mobile-nav-ul">
+				<li class="mobile-navbar"><a href="#band">BAND</a></li>
+				<li class="mobile-navbar"><a href="#tour">TOUR</a></li>
+				<li class="mobile-navbar"><a href="contact">CONTACT</a></li>
+				<li class="mobile-navbar"><a href="javascript: void(0)">MORE</a></li>
+			</ul>
+		</div>
+		<!-- mobile navbar ends -->
+		<!-- NavBar ends -->
+		<!-- Home section -->
+		<div style="margin-top: 46px;" id="home">
+			<div class="mySlides my-container center">
+				<img src="./assets/la.jpg" style="width: 100%;"/>
+				<div class="bottomMiddle-slide white">
+					<h3>Los Angeles</h3>
+					<p><b>Here's Los Angeles</b></p>
+				</div>
+			</div>
+			<div class="mySlides my-container center">
+				<img src="./assets/ny.jpg" style="width: 100%;"/>
+				<div class="bottomMiddle-slide white">
+					<h3>New York</h3>
+					<p><b>Here's New York</b></p>
+				</div>
+			</div>
+			<div class="mySlides my-container center">
+				<img src="./assets/chicago.jpg" style="width: 100%;"/>
+				<div class="bottomMiddle-slide white">
+					<h3>Chicago</h3>
+					<p><b>Here's Chicago</b></p>
+				</div>
+			</div>
+		</div>
+		<!-- Home Section ends -->
+		<!-- Band section -->
+		<div class="my-container center content padding-64" style="max-width: 800px;" id="band">
+			<h3 class="wide-4">THE BAND</h3>
+			<p class="opacity-light">We Love Music</p>
+			<p>We have created a fictional band website. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+			<div class="row padding-32">
+				<div class="col-3">
+					<p>Name</p>
+					<img src="assets/bandmember.jpg" class="border-round" style="width: 60%;" />
+				</div>
+				<div class="col-3">
+					<p>Name</p>
+					<img src="assets/bandmember.jpg" class="border-round" style="width: 60%;" />
+				</div>
+				<div class="col-3">
+					<p>Name</p>
+					<img src="assets/bandmember.jpg" class="border-round" style="width: 60%;" />
+				</div>
+			</div>
+		</div>
+		<!-- Band section ends -->
+	</body>
+	<script>
+		// Automatic Slideshow - change image every 4 seconds
+		var myIndex = 0;
+		carousel();
+		
+		function carousel() {
+			var i;
+			var x = document.getElementsByClassName("mySlides");
+			for (i = 0; i < x.length; i++) {
+				x[i].style.display = "none";  
+			}
+			myIndex++;
+			if (myIndex > x.length) {myIndex = 1}    
+			x[myIndex-1].style.display = "block";  
+			setTimeout(carousel, 4000);    
+		}
+		
+		// Used to toggle the menu on small screens when clicking on the menu button
+		// function myFunction() {
+		// 	var x = document.getElementById("navDemo");
+		// 	if (x.className.indexOf("w3-show") == -1) {
+		// 		x.className += " w3-show";
+		// 	} else { 
+		// 		x.className = x.className.replace(" w3-show", "");
+		// 	}
+		// }
+		
+		// When the user clicks anywhere outside of the modal, close it
+		// var modal = document.getElementById('ticketModal');
+		// window.onclick = function(event) {
+		// 	if (event.target == modal) {
+		// 		modal.style.display = "none";
+		// 	}
+		// }
+		</script>
+</html>
