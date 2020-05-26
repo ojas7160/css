@@ -16,6 +16,7 @@ body {
   top: 0;
   left: 0;
   width: 100%;
+  z-index: 1;
 }
 
 .nav-ul {
@@ -83,9 +84,12 @@ body {
 .white {
 	color: #fff;
 }
+.bg-white {
+  background-color: white;;
+}
 .col-3 {
 	float: left;
-	width: 33.33%;
+	width: 100%;
 }
 .row:after {
 	content: '';
@@ -111,6 +115,88 @@ body {
 .padding-32 {
 	padding: 32px 0px 32px 0px;
 }
+.bg-black {
+  background-color: #000;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "Segoe UI",Arial,sans-serif;
+  font-weight: 400;
+  margin: 10px 0;
+}
+.tour-ul {
+  list-style-type: none;
+  background-color: white;
+  margin: 0;
+  padding: 0;
+}
+.tour-border {
+  border: 1px solid #ccc;
+}
+.tour-tag {
+  background-color: red;
+  color: #fff;
+  display: inline-block;
+  overflow: hidden;
+}
+.tour-badge {
+  background-color: #000;
+  border-radius: 50%;
+  padding: 0px 6px 0px 6px !important;
+  color: #fff;
+  margin-right: 15px;
+
+}
+.tour-padding {
+  padding: 2.01em 16px;
+}
+.text-left {
+  text-align: left;
+}
+.mb-20 {
+  margin-bottom: 20px;
+}
+.right {
+  float: right;
+}
+.right::after {
+  content: '';
+  clear: both;
+  display: inline;
+}
+.show-hamburger {
+  display: block !important;
+}
+.text-grey {
+  color: gray;
+}
+.tour-ul > li {
+  padding: 8px 16px;
+  text-align: left;
+  border-bottom: 1px solid lightgrey;
+}
+.tour-ul > li:last-child {
+  border-bottom: none;
+}
+.tour-tag, .tour-badge {
+  display: inline-block;
+  text-align: center;
+  margin-left: 10px;
+  padding: 0px 8px 0px 8px;
+  vertical-align: middle;
+}
+.row-padding > .col-3 {
+  padding: 0px 8px;
+}
+.row-padding::after {
+  content: '';
+  clear: both;
+  display: table;
+}
 
 @media screen and (max-width: 600px) {
   .hide-small {
@@ -118,6 +204,16 @@ body {
     transition: width 2s linear 1s;
 	}
 	.mobile-nav {
-		display: block;
-	}
+    display: none;
+    z-index: 1;
+  }
+}
+
+@media screen and (min-width: 601px) {
+  .col-3 {
+    width: 33.33%;
+  }
+  .hide-hamburger {
+    display: none !important;
+  }
 }

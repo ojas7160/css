@@ -17,10 +17,11 @@
 				<li class="hide-small"><a href="#tour">TOUR</a></li>
 				<li class="hide-small"><a href="contact">CONTACT</a></li>
 				<li class="hide-small"><a href="javascript: void(0)">MORE</a></li>
+				<li class="hide-hamburger right" onclick="toggleNav()"><a href="javascript: void(0)"><i class="fa fa-bars"></i></a></li>
 			</ul>
 		</div>
 		<!-- navbar for mobile -->
-		<div class="mobile-nav">
+		<div id="mobileNav" class="mobile-nav">
 			<ul class="mobile-nav-ul">
 				<li class="mobile-navbar"><a href="#band">BAND</a></li>
 				<li class="mobile-navbar"><a href="#tour">TOUR</a></li>
@@ -31,7 +32,7 @@
 		<!-- mobile navbar ends -->
 		<!-- NavBar ends -->
 		<!-- Home section -->
-		<div style="margin-top: 46px;" id="home">
+		<div style="margin-top: 46px;" class="content" id="home">
 			<div class="mySlides my-container center">
 				<img src="./assets/la.jpg" style="width: 100%;"/>
 				<div class="bottomMiddle-slide white">
@@ -57,25 +58,65 @@
 		<!-- Home Section ends -->
 		<!-- Band section -->
 		<div class="my-container center content padding-64" style="max-width: 800px;" id="band">
-			<h3 class="wide-4">THE BAND</h3>
-			<p class="opacity-light">We Love Music</p>
+			<h2 class="wide-4">THE BAND</h2>
+			<p class="opacity-light"><i>We Love Music</i></p>
 			<p>We have created a fictional band website. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
 			<div class="row padding-32">
-				<div class="col-3">
+				<div class="col-3 mb-20">
 					<p>Name</p>
 					<img src="assets/bandmember.jpg" class="border-round" style="width: 60%;" />
 				</div>
-				<div class="col-3">
+				<div class="col-3 mb-20">
 					<p>Name</p>
 					<img src="assets/bandmember.jpg" class="border-round" style="width: 60%;" />
 				</div>
-				<div class="col-3">
+				<div class="col-3 mb-20">
 					<p>Name</p>
 					<img src="assets/bandmember.jpg" class="border-round" style="width: 60%;" />
 				</div>
 			</div>
 		</div>
 		<!-- Band section ends -->
+		<!-- Tour section -->
+		<div class="bg-black">
+			<div class="my-container center content padding-64" style="max-width:800px">
+				<h2 class="wide-4 white">TOUR DATES</h2>
+				<p class="opacity-light center text-grey"><i>Remember to book your tickets!</i></p>
+				<br>
+				<ul class="tour-ul tour-border text-grey">
+					<li>September<span class="tour-tag">Sold out</span></li>
+					<li>October<span class="tour-tag">Sold out</span></li>
+					<li>November<span class="tour-badge right">3</span></li>
+				</ul>
+				<div class="row-padding padding-32" style="margin: 0 -9px;">
+					<div class="col-3 mb-20">
+						<img src="assets/newyork.jpg" style="width: 100%"/>
+						<div class="tour-padding text-left bg-white">
+							<p><b>New York</b></p>
+							<p class="opacity-light">Fri, 27 Nov 2020</p>
+							<p>Praesent tincidunt sed tellus ut rutrum sed vitae justo.</p>
+						</div>
+					</div>
+					<div class="col-3 mb-20">
+						<img src="assets/paris.jpg" style="width: 100%"/>
+						<div class="tour-padding text-left bg-white">
+							<p><b>Paris</b></p>
+							<p class="opacity-light">Fri, 27 Nov 2020</p>
+							<p>Praesent tincidunt sed tellus ut rutrum sed vitae justo.</p>
+						</div>
+					</div>
+					<div class="col-3 mb-20">
+						<img src="assets/sanfran.jpg" style="width: 100%"/>
+						<div class="tour-padding text-left bg-white">
+							<p><b>San Francisco</b></p>
+							<p class="opacity-light">Fri, 27 Nov 2020</p>
+							<p>Praesent tincidunt sed tellus ut rutrum sed vitae justo.</p>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!-- Tour section ends -->
 	</body>
 	<script>
 		// Automatic Slideshow - change image every 4 seconds
@@ -92,6 +133,15 @@
 			if (myIndex > x.length) {myIndex = 1}    
 			x[myIndex-1].style.display = "block";  
 			setTimeout(carousel, 4000);    
+		}
+
+		function toggleNav() {
+			var x = document.getElementById('mobileNav')
+			if(x.className.indexOf('show-hamburger') == -1) {
+				x.className += ' show-hamburger'
+			} else {
+				x.className = x.className.replace(' show-hamburger', '')
+			}
 		}
 		
 		// Used to toggle the menu on small screens when clicking on the menu button
