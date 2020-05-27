@@ -35,21 +35,21 @@
 		<div style="margin-top: 46px;" class="content" id="home">
 			<div class="mySlides my-container center">
 				<img src="./assets/la.jpg" style="width: 100%;"/>
-				<div class="bottomMiddle-slide white">
+				<div class="bottomMiddle-slide white container">
 					<h3>Los Angeles</h3>
 					<p><b>Here's Los Angeles</b></p>
 				</div>
 			</div>
 			<div class="mySlides my-container center">
 				<img src="./assets/ny.jpg" style="width: 100%;"/>
-				<div class="bottomMiddle-slide white">
+				<div class="bottomMiddle-slide white container">
 					<h3>New York</h3>
 					<p><b>Here's New York</b></p>
 				</div>
 			</div>
 			<div class="mySlides my-container center">
 				<img src="./assets/chicago.jpg" style="width: 100%;"/>
-				<div class="bottomMiddle-slide white">
+				<div class="bottomMiddle-slide white container">
 					<h3>Chicago</h3>
 					<p><b>Here's Chicago</b></p>
 				</div>
@@ -57,10 +57,10 @@
 		</div>
 		<!-- Home Section ends -->
 		<!-- Band section -->
-		<div class="my-container center content padding-64" style="max-width: 800px;" id="band">
+		<div class="container center content padding-64" style="max-width: 800px;" id="band">
 			<h2 class="wide-4">THE BAND</h2>
 			<p class="opacity-light"><i>We Love Music</i></p>
-			<p>We have created a fictional band website. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+			<p class="justify">We have created a fictional band website. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
 			<div class="row padding-32">
 				<div class="col-3 mb-20">
 					<p>Name</p>
@@ -78,8 +78,8 @@
 		</div>
 		<!-- Band section ends -->
 		<!-- Tour section -->
-		<div class="bg-black">
-			<div class="my-container center content padding-64" style="max-width:800px">
+		<div class="bg-black" id="tour">
+			<div class="container center content padding-64" style="max-width:800px">
 				<h2 class="wide-4 white">TOUR DATES</h2>
 				<p class="opacity-light center text-grey"><i>Remember to book your tickets!</i></p>
 				<br>
@@ -91,7 +91,7 @@
 				<div class="row-padding padding-32" style="margin: 0 -9px;">
 					<div class="col-3 mb-20">
 						<img src="assets/newyork.jpg" style="width: 100%"/>
-						<div class="tour-padding text-left bg-white">
+						<div class="container text-left bg-white">
 							<p><b>New York</b></p>
 							<p class="opacity-light">Fri, 27 Nov 2020</p>
 							<p>Praesent tincidunt sed tellus ut rutrum sed vitae justo.</p>
@@ -99,7 +99,7 @@
 					</div>
 					<div class="col-3 mb-20">
 						<img src="assets/paris.jpg" style="width: 100%"/>
-						<div class="tour-padding text-left bg-white">
+						<div class="container text-left bg-white">
 							<p><b>Paris</b></p>
 							<p class="opacity-light">Fri, 27 Nov 2020</p>
 							<p>Praesent tincidunt sed tellus ut rutrum sed vitae justo.</p>
@@ -107,7 +107,7 @@
 					</div>
 					<div class="col-3 mb-20">
 						<img src="assets/sanfran.jpg" style="width: 100%"/>
-						<div class="tour-padding text-left bg-white">
+						<div class="container text-left bg-white">
 							<p><b>San Francisco</b></p>
 							<p class="opacity-light">Fri, 27 Nov 2020</p>
 							<p>Praesent tincidunt sed tellus ut rutrum sed vitae justo.</p>
@@ -117,6 +117,48 @@
 			</div>
 		</div>
 		<!-- Tour section ends -->
+		<!-- Contact section -->
+		<div class="container padding-64 center content" style="max-width: 800px;">
+			<h2 class="wide-4">CONTACT</h2>
+			<p class="opacity-light"><i>Fan? Drop a note!</i></p>
+			<br>
+			<div class="row padding-32">
+				<div class="col m6" style="text-align: left; font-size: 18px; margin-bottom: 10px;">
+					<i class="fa fa-map-marker" style="width: 9%; margin-bottom: 10px;"></i> Chicago, US<br>
+					<i class="fa fa-phone" style="width: 9%; margin-bottom: 10px;"></i> Phone: +00 151515<br>
+					<i class="fa fa-envelope" style="width: 9%; margin-bottom: 10px;"></i> Email: mail@mail.com<br>
+				</div>
+				<div class="col m6">
+					<form>
+						<div class="row-padding" style="margin:0 -16px 8px -16px">
+							<div class="col">
+								<input class="input" placeholder="NAME" type="text" name="name" />
+							</div>
+							<div class="col">
+								<input class="input" placeholder="EMAIL" type="text" name="email" />
+							</div>
+						</div>
+						<input class="input" placeholder="Message" type="text" name="message" />
+						<button class="send-btn">SEND</button>
+					</form>
+				</div>
+			</div>
+		</div>
+		<!-- Contact section ends -->
+		<!-- Image section -->
+		<img class="img filter" src="assets/map.jpg" style="width: 100%;">
+		<!-- Image section ends -->
+
+		<!-- Footer -->
+		<footer class="container padding-64 center opacity-light text-grey" style="font-size: 25px;">
+			<i class="fa fa-facebook-official hover-opacity"></i>
+			<i class="fa fa-instagram hover-opacity"></i>
+			<i class="fa fa-snapchat hover-opacity"></i>
+			<i class="fa fa-pinterest-p hover-opacity"></i>
+			<i class="fa fa-twitter hover-opacity"></i>
+			<i class="fa fa-linkedin hover-opacity"></i>
+			<p style="font-size: 15px;">Powered by me</p>
+		</footer>
 	</body>
 	<script>
 		// Automatic Slideshow - change image every 4 seconds
