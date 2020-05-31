@@ -217,6 +217,27 @@ h6 {
 .photos-img:hover {
 	opacity: 0.6;
 }
+.text-white {
+	color: #fff;
+}
+.nav-ul {
+	list-style: none;
+	background-color: #222;
+	padding: 0;
+}
+.nav-ul > li {
+	padding: 20px 12px;
+	margin-right: 18px;
+	display: inline-block;
+}
+.nav-ul > li:first-child {
+	padding-left: 30px !important;
+}
+.nav-ul > li > a {
+	display: block;
+	text-decoration: none;
+	color: #f1f1f1;
+}
 
 
 @media screen and (max-width: 601px) {
@@ -234,5 +255,8 @@ h6 {
 	}
 	.col.m2 {
 		width: 49.99%;
+	}
+	.nav-ul {
+		display: none;
 	}
 }
