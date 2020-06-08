@@ -1,0 +1,36 @@
+* {
+  box-sizing: border-box;
+}
+body {
+  margin: 0;
+  font-family: "Open sans", sans-serif;
+  color: #696969;
+  /* font-family: "CerebriSans"; */
+}
+.top-hiring {
+  font-size: 15px;
+  font-weight: 600;
+  color: #002fa6;
+  cursor: pointer;
+}
+.top-hiring:hover {
+  color: #d2a98e;
+  transition: ease-in 0.5s;
+}
+.top-header {
+  text-align: center;
+  font-size: 12px;
+  border-bottom: 1px solid #eaeaea;
+  padding: 7px 10spx;
+}
+.brand-img {
+	width: 12%;
+}
+.container {
+  padding-right: 15px;
+  padding-left: 15px;
+}
+.padding-16 {
+  padding-top: 16px;
+  padding-bottom: 16px;
+}
