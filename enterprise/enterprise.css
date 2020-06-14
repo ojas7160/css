@@ -24,7 +24,7 @@ body {
   padding: 7px 10spx;
 }
 .brand-img {
-	width: 12%;
+	width: 100%;
 }
 .container {
   padding-right: 15px;
@@ -34,3 +34,52 @@ body {
   padding-top: 16px;
   padding-bottom: 16px;
 }
+.d-flex {
+  display: flex;
+}
+.header-logo {
+  flex-basis: 13%;
+  align-items: center;
+}
+.header-middle {
+  margin-left: 95px;
+}
+.header-middle ul {
+  list-style: none;
+}
+.header-middle > ul {
+  display: flex;
+  padding: 0;
+}
+.header-middle > ul > li {
+  margin-right: 24px;
+  position: relative;
+  right: 0;
+}
+.header-middle a {
+  text-decoration: none;
+  font-size: 16px;
+  color: black;
+  line-height: 1.18px;
+}
+.home-menu:hover .home-submenu{
+  visibility: visible;
+  /* transition: 1s ease-in; */
+  opacity: 1;
+  transform: translateY(0px);
+}
+.home-submenu {
+  visibility: hidden;
+  transition-duration: 0.4s;
+  transform: translateY(50px);
+  position: absolute;
+  /* top: 100%; */
+  opacity: 0;
+  padding: 0;
+}
+.home-menu > .home-submenu ul {
+  padding: 0;
+}
+/* .home-submenu ul li {
+  width: 250px;
+} */
